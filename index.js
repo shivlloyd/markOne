@@ -38,6 +38,7 @@ var scoreList = [
 
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
+  userAnswer=userAnswer.toLowerCase();
 
   if (userAnswer === answer) {
     console.log("right");
